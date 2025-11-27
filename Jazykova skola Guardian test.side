@@ -1,0 +1,109 @@
+{
+  "id": "19976fba-b645-452c-acff-497854a4831c",
+  "version": "2.0",
+  "name": "Jazykova skola Guardian",
+  "url": "https://www.jazykovaskolaguardian.sk",
+  "tests": [{
+    "id": "fc9139d1-701a-42ae-8c37-2473f4e303bb",
+    "name": "TC01_guardian",
+    "commands": [{
+      "id": "208dc119-d55c-4574-b8c0-dd6fb69aa7c2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c9db436-833e-4646-8ea6-d4ad5530e419",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1567x884",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7173fcbe-c45c-4375-bcc4-455715890618",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,694)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86882ef3-0f18-4fc9-9255-d05168a554aa",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1046)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a704c5f4-d237-40cc-aedd-63966c38d7c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=ast-menu-bars-icon",
+      "targets": [
+        ["id=ast-menu-bars-icon", "id"],
+        ["css=#ast-menu-bars-icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "17ff4d53-6bfb-41a8-b21b-4adae9b0a9a9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Kurzy",
+      "targets": [
+        ["linkText=Kurzy", "linkText"],
+        ["css=#menu-item-1573 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Kurzy')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-1573']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.jazykovaskolaguardian.sk/kurz-cudzieho-jazyka-pre-kazdeho/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kurzy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4278f37-2001-47fe-bf67-be2daef7b370",
+      "comment": "",
+      "command": "click",
+      "target": "css=.elementor-element-97c88e1 .elementor-button-text",
+      "targets": [
+        ["css=.elementor-element-97c88e1 .elementor-button-text", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div[2]/div/div/div[5]/div/div/a/span/span", "xpath:idRelative"],
+        ["xpath=//div/a/span/span", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4144",
+      "windowTimeout": 2000
+    }, {
+      "id": "e7962a94-40ed-498d-bbd3-35a1d99be747",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a282425-510d-4be3-829c-5fe114582a09",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4144}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "557bafba-8eb9-46cf-aaa6-e1311a8bbdda",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "09874a56-14bb-4514-b4f5-56e13c9bdcd7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fc9139d1-701a-42ae-8c37-2473f4e303bb"]
+  }],
+  "urls": ["https://www.jazykovaskolaguardian.sk/"],
+  "plugins": []
+}
